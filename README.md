@@ -40,5 +40,6 @@ dir `pages/_app.js`, import css module. Tho global css file can be stored anywhe
 
 `npm install tailwindcss postcss-preset-env postcss-flexbugs-fixes`
 `postcss.config.js`
+`tailwind.config.js`
 
 
