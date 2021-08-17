@@ -42,4 +42,8 @@ dir `pages/_app.js`, import css module. Tho global css file can be stored anywhe
 `postcss.config.js`
 `tailwind.config.js`
 
+```jsx
+className="rounded-full"
+```
+
 
