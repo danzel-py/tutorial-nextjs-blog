@@ -4,6 +4,8 @@ module.exports = {
     // Use *.tsx if using TypeScript
     './pages/**/*.js',
     './components/**/*.js'
-  ]
-  // ...
+  ],
+  corePlugins: {
+    listStyleType: false
+  }
 }
