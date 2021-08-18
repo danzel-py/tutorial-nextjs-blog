@@ -6,6 +6,8 @@
 npx create-next-app nextjs-blog --use-npm --example "https://github.com/vercel/next-learn-starter/tree/master/learn-starter"
 ```
 
+---
+
 ## Navigate between pages
 
 > Next. js ships with its own built-in page-based routing system, whereas the typical SPA relies on client-side routing, typically using a library like react-router.
@@ -18,6 +20,7 @@ Next.js automatically prefetches.
 
 > Next.js automatically optimizes your application for the best performance by code splitting, client-side navigation, and prefetching (in production).
 
+---
 ## Assets, metadata, and CSS.
 
 > Next.js has built-in support for CSS and Sass.
@@ -48,7 +51,7 @@ npm install tailwindcss postcss-preset-env postcss-flexbugs-fixes
 ```jsx
 className="rounded-full"
 ```
-
+---
 
 ## Pre-rendering and data fetching
 
@@ -61,6 +64,7 @@ React : no pre-rendering, relaying on client js to generate html, normal stuff
 Can choose which one to use for each page
 
 parsing md => `npm install gray-matter`
+render md => `npm install remark@13 remark-html@13`
 
 > Next.js polyfills fetch() on both the client and server. You don't need to import it.
 
@@ -71,6 +75,9 @@ need to pass context to `getServerSideProps`
 User-specific pages such as dashboard aren't related to SEO therefore client-side fetch is ok
 
 Try <b>useSWR</b> hook for client-side rendering
+
+---
+## Dynamic Routes
 
 
 
