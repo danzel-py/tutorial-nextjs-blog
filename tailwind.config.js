@@ -6,6 +6,5 @@ module.exports = {
     './components/**/*.js'
   ],
   corePlugins: {
-    listStyleType: false
   }
 }

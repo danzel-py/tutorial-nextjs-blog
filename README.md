@@ -79,10 +79,47 @@ Try <b>useSWR</b> hook for client-side rendering
 ---
 ## Dynamic Routes
 
+1. Create page at /pages/thing/[something].js
 
+2. File must contain react component, getStaticPaths, and getStaticProps
 
+`getStaticPaths` returns array of possible values (in object with param as key)
 
+```js
+[
+  {
+    params:{
+      something : something1
+    }
+  },
+  {
+    params:{
+      something : something2
+    }
+  },
+  fallback : false // when path not found, return 404
+]
+```
 
+`getStaticProps` from param.something, return 
+```js
+{
+  props:{
+    dataGoesHere
+  }
+}
+```
+---
+## API Routes
 
+serverless functions known as lambda
 
+create function in `pages/api` 
+```js
+export default function handler(req,res){
+  res.send("hi")
+}
+```
+
+> You should not fetch an API Route from getStaticProps or getStaticPaths. Instead, write your server-side code directly in getStaticProps or getStaticPaths (or call a helper function).
 
